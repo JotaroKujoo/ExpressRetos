@@ -1,6 +1,6 @@
 {
     "development":{
-        "username" : "root",
+        "username": "root",
         "password": "uzHKpjOQP23ZcdVrcaGi",
         "database": "PcComponentes",
         "host": "containers-us-west-89.railway.app",

@@ -1,8 +1,8 @@
-const { application } = require('express');
-const {dataTypes, Model, DataTypes, INTEGER} = require('sequelize');
+
+const {sequelizes, Model} = require('sequelize');
 const sequelize = require('../db/db'); 
 
-class fabricantes extends Model { };
+class Fabricantes extends Model { };
 
 fabricantes.init({
     codigo: {
@@ -11,19 +11,17 @@ fabricantes.init({
         allowNull: false,
         autoIncrement: true,
         }
-    },
     nombre: DataTypes.STRING,
-    {
+    },{
         sequelize,
         modelName: "fabricantes",
         freezeTableNAme: true,
         timestamps:false,
-    }
-    {
+    },{
         sequelize,
         modelName: "fabricantes",
         freezeTableNAme: true,
         timestamps:false,
-    };
-)
-);
+    });
+
+module.exports = Fabricantes;

@@ -1,0 +1,10 @@
+{
+    "development":{
+        "username": "root",
+        "password": "uzHKpjOQP23ZcdVrcaGi",
+        "database": "PcComponentes",
+        "host": "containers-us-west-89.railway.app",
+        "dialect": "mysql",
+        "port": "5436"
+    }
+}

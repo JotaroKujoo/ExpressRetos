@@ -5,6 +5,6 @@ const Articulos = require('../models/articulos')
 
 //CRUD READ
 
-router.get('/articulos', (req, res) => {Articulos.findAll().then(res.send('Hola estás en artículos'))});
+router.get('/', (req, res) => {Articulos.findAll().then(res.send('Hola estás en artículos'))});
 
 module.exports = router;

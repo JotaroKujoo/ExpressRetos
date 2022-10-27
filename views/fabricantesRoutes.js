@@ -5,6 +5,6 @@ const Fabricantes = require("../models/fabricantes")
 
 //CRUD READ
 
-router.get('/getfabricantes', (req, res) => {Fabricantes.findAll().then(res.send('Hola estas en fabricantes')) });
+router.get('/', (req, res) => {Fabricantes.findAll().then(res.send('Hola estas en fabricantes'))});
 
 module.exports = router

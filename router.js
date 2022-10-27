@@ -6,9 +6,7 @@ const fabricantesRoutes = require('./views/fabricantesRoutes');
 
 //middleware routes
 
-router.use('articulos')
-router.use('fabricantes')
-
-
+router.use('/articulos', articulosRoutes);
+router.use('/fabricantes', fabricantesRoutes);
 
 module.exports = router;

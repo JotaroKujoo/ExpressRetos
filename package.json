@@ -1,0 +1,23 @@
+{
+  "name": "retorailway2710",
+  "version": "0.0.1",
+  "description": "reto express 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jose marta adrian",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JotaroKujoo/ExpressRetos.git"
+  },
+  "keywords": [
+    "reto1",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/JotaroKujoo/ExpressRetos/issues"
+  },
+  "homepage": "https://github.com/JotaroKujoo/ExpressRetos#readme"
+}

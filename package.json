@@ -4,6 +4,7 @@
   "description": "reto express 1",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jose marta adrian",
@@ -19,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/JotaroKujoo/ExpressRetos/issues"
   },
-  "homepage": "https://github.com/JotaroKujoo/ExpressRetos#readme"
+  "homepage": "https://github.com/JotaroKujoo/ExpressRetos#readme",
+  "dependencies": {
+    "express": "4.18.2",
+    "mysql": "2.18.1",
+    "mysql2": "2.3.3",
+    "nodemon": "2.0.20",
+    "sequelize": "6.25.3"
+  }
 }

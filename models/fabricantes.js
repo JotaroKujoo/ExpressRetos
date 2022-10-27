@@ -1,29 +1,21 @@
-const { application } = require('express');
-const {dataTypes, Model, DataTypes, INTEGER} = require('sequelize');
+
+const { Model, DataTypes} = require('sequelize');
 const sequelize = require('../db/db'); 
 
-class fabricantes extends Model { };
+class Fabricantes extends Model { };
 
-fabricantes.init({
+Fabricantes.init({
     codigo: {
-        type: dataTypes.INTEGER,
-        primarykey: true,
+        type: DataTypes.INTEGER,
         allowNull: false,
-        autoIncrement: true,
-        }
+        primaryKey: true
     },
-    nombre: DataTypes.STRING,
-    {
-        sequelize,
-        modelName: "fabricantes",
-        freezeTableNAme: true,
-        timestamps:false,
-    }
-    {
-        sequelize,
-        modelName: "fabricantes",
-        freezeTableNAme: true,
-        timestamps:false,
-    };
-)
-);
+    nombre: DataTypes.STRING
+},{
+    sequelize,
+    modelName:"fabricantes",
+    freezeTableName: true,
+    timestamps: false
+});
+
+module.exports = Fabricantes;
